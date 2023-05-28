@@ -8,6 +8,7 @@ $$
 		update t_account set balance=balance - amount where recid=sender;
 		update t_account set balance=balance + amount where recid=reci;
 	commit;
+-- store pro done
 	end;
 	
 $$ language plpgsql;
